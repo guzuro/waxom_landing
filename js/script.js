@@ -7,6 +7,7 @@ $(".header-menu__burger").click(function (e) {
 $(document).ready(function(){
    $('.home__slider').slick({
       dots: true,
+      
    });
  });
  
