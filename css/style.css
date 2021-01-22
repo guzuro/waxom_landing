@@ -138,7 +138,7 @@ font-family: 'Raleway', sans-serif;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 28px;
   color: #8c8c8c;
 }
 
@@ -538,8 +538,6 @@ font-family: 'Raleway', sans-serif;
 
 
 /*****project section******/
-.projects {}
-
 .projects__inner {
   padding: 80px 0px;
 }
@@ -641,7 +639,7 @@ font-family: 'Raleway', sans-serif;
   height: 110px;
   width: 100%;
   z-index: 5;
-  -webkit-clip-path:polygon(16% 0, 23% 12%, 100% 12%, 100% 70%, 100% 100%, 67% 100%, 21% 100%, 0 100%, 0 13%, 8% 13%);
+  -webkit-clip-path: polygon(16% 0, 23% 12%, 100% 12%, 100% 70%, 100% 100%, 67% 100%, 21% 100%, 0 100%, 0 13%, 8% 13%);
 }
 
 .project-item__icons {
@@ -660,7 +658,7 @@ font-family: 'Raleway', sans-serif;
   margin: 0px 0px 0px 5px;
 }
 
-.project-item__body{
+.project-item__body {
   height: 100%;
   display: block;
   position: relative;
@@ -668,6 +666,7 @@ font-family: 'Raleway', sans-serif;
   margin: 0px 0px 0px 30px;
 
 }
+
 .project-item__title {
   font-size: 20px;
   font-family: "Raleway";
@@ -678,4 +677,101 @@ font-family: 'Raleway', sans-serif;
   font-size: 14px;
   font-family: "Montserrat";
   color: #d1d1d1;
+}
+
+.project-item:hover .project-item__title {
+  color: #fff;
+}
+
+.project-item:hover .project-item__about {
+  color: #c7b299;
+}
+
+.project__btn {
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+/*****presentation*****/
+
+.presentation {
+  background: url("../img/presentation_bg.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.presentation__inner {
+  padding: 200px 0px;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+.presentation__play {
+  width: 100%;
+  max-width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 50%;
+}
+
+.presentation__title {
+  margin: 50px 0px 0px 0px;
+  color: #fff;
+}
+
+.presentation__text {
+  margin: 30px 0px 0px 0px;
+  color: #fff;
+}
+
+.presentation__time {
+  margin: 40px 0px 0px 0px;
+}
+
+/*****excellent section*****/
+.excellent {}
+
+.excellent__inner {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.excellent__left {}
+
+.excellent__image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .excellent__left {
+    display: none;
+  }
+
+}
+
+.excellent__right {
+  margin: 110px 0px 0px 0px;
+}
+
+.excellent__body {}
+
+.excellent__title {}
+
+.excellent__text {
+  margin: 40px 0px 0px 0px;
+}
+
+.excellent__list {
+  margin: 35px 0px 0px 50px;
+}
+
+.excellent__item {
+  list-style-image: url("../img/arrowLi.png");
+  padding-left: 35px;
+  margin: 15px 0px 0px 0px;
 }
