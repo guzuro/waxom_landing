@@ -986,3 +986,20 @@ font-family: 'Raleway', sans-serif;
 }
 
 /******posts slicker end******/
+
+.brands {
+  background: url("../img/brands_bg.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.brands__inner {
+  padding: 150px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.brands__image {
+  max-width: fit-content;
+  flex: 0 1 25%;
+}
