@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+.MAINBOX {
+  overflow-x: hidden !important;
+}
+
 /*Обнуление*/
 * {
   padding: 0;
@@ -96,6 +100,9 @@ h6 {
 body {
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 a:hover,
@@ -160,12 +167,11 @@ font-family: 'Raleway', sans-serif;
 /*header*/
 .header {
   background-color: rgba(0, 0, 0, 0.35);
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 50;
-
+  position: fixed;
 }
 
 .header__inner {
@@ -363,7 +369,6 @@ font-family: 'Raleway', sans-serif;
   display: -webkit-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0px -20px;
   justify-content: center;
 }
 
@@ -522,6 +527,12 @@ font-family: 'Raleway', sans-serif;
   justify-content: space-between;
 }
 
+@media (max-width: 767.98px) {
+  .bar__inner {
+    flex-direction: column;
+  }
+}
+
 .bar__title {
   font-size: 28px;
   font-family: "Raleway";
@@ -569,6 +580,7 @@ font-family: 'Raleway', sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .project__button {
@@ -596,6 +608,12 @@ font-family: 'Raleway', sans-serif;
   justify-content: space-between;
 }
 
+@media screen and (max-width:967px) {
+  .projects__works {
+    justify-content: space-around;
+  }
+}
+
 .project-item {
   width: 370px;
   height: 340px;
@@ -609,7 +627,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 .project-item__image {
-  width: 370px;
+  width: 100%;
   height: 240px;
   position: absolute;
   z-index: 4;
@@ -619,7 +637,7 @@ font-family: 'Raleway', sans-serif;
   display: block;
   background-color: #00000059;
   position: absolute;
-  width: 370px;
+  width: 100%;
   height: 0;
   top: 0;
   z-index: 5;
@@ -744,8 +762,6 @@ font-family: 'Raleway', sans-serif;
   justify-content: space-around;
 }
 
-.excellent__left {}
-
 .excellent__image {
   max-width: 100%;
   height: auto;
@@ -760,6 +776,12 @@ font-family: 'Raleway', sans-serif;
 
 .excellent__right {
   margin: 110px 0px 0px 0px;
+}
+
+@media screen and (max-width:992px) {
+  .excellent__right {
+    margin: 10px 0px 80px 0px;
+  }
 }
 
 .excellent__body {}
@@ -866,6 +888,7 @@ font-family: 'Raleway', sans-serif;
   height: 400px;
   position: relative;
   border: 1px rgba(0, 0, 0, 0.08) solid;
+  margin: 0 auto;
 }
 
 .post-item:hover {
@@ -939,15 +962,22 @@ font-family: 'Raleway', sans-serif;
 
 .post-item__more {
   margin: 30px 0px 0px 0px;
+}
+
+.read-more {
   font-size: 14px;
   font-family: "Montserrat";
   color: #c7b299;
 }
 
-.post-item__more::after {
+.read-more:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.read-more::after {
   content: ">";
   padding: 0px 0px 0px 5px;
-
 }
 
 /******posts slicker start******/
@@ -1002,4 +1032,144 @@ font-family: 'Raleway', sans-serif;
 .brands__image {
   max-width: fit-content;
   flex: 0 1 25%;
+}
+
+/*******************/
+.footer {
+  background-color: #191919;
+}
+
+.footer__inner {
+  padding: 70px 0px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__column {
+  max-width: 265px;
+  flex: 1 1 25%
+}
+
+.footer__about,
+.footer__posts,
+.footer__twitter,
+.footer__dribble {
+  margin: 30px 0px 0px 0px;
+}
+
+.footer__about:hover {
+  color: #c7b299;
+}
+
+.footer__more {
+  margin: 40px 0px 0px 0px;
+  color: #fff;
+}
+
+.footer-title {
+  font-size: 24px;
+  font-family: "Raleway";
+  font-weight: bold;
+  color: #fff;
+  margin: 30px 0px 0px 0px;
+}
+
+.footer__post,
+.twitt-feed__item {
+  border-bottom: 1px #fff solid;
+  margin: 0px 0px 20px 0px;
+  padding: 0px 0px 10px 0px;
+}
+
+.footer__post:last-child,
+.twitt-feed__item:last-child {
+  border-bottom: unset
+}
+
+.footer-post:hover .footer-post__date {
+  color: #fff;
+}
+
+.footer-post:hover .footer-post__text {
+  color: #c7b299;
+}
+
+.footer__text {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #555555;
+  line-height: 1.714;
+}
+
+.footer-post__date,
+.twitt-feed__date {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: #363636;
+  line-height: 1.667;
+}
+
+.footer-post__text {}
+
+.footer__text_blue {
+  color: #00bff3;
+}
+
+.twitt-feed__item:hover .twitt-feed__date {
+  color: #fff;
+}
+
+.twitt-feed__item:hover .twitt-feed__message {
+  color: #c7b299;
+}
+
+.footer__dribble {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer__image {
+  margin: 0px 0px 10px 2px;
+}
+
+.footer__copyright {
+  background-color: #111111;
+}
+
+.copyright__inner {
+  padding: 40px 0px 50px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.copyright__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.copyright__item {
+  border-right: 1px #fff solid;
+  padding: 0px 8px 0px 0px;
+  margin: 0px 0px 0px 10px;
+}
+
+.copyright__item {
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: #555555;
+  line-height: 1.538;
+}
+
+.copyright__item:last-child {
+  border: unset;
+}
+
+.copyright__link {
+  color: #959595;
 }
