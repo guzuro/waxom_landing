@@ -679,6 +679,7 @@ font-family: 'Raleway', sans-serif;
   height: 110px;
   width: 100%;
   z-index: 5;
+  clip-path: polygon(16% 0, 23% 12%, 100% 12%, 100% 70%, 100% 100%, 67% 100%, 21% 100%, 0 100%, 0 13%, 8% 13%);
   -webkit-clip-path: polygon(16% 0, 23% 12%, 100% 12%, 100% 70%, 100% 100%, 67% 100%, 21% 100%, 0 100%, 0 13%, 8% 13%);
 }
 
@@ -771,8 +772,6 @@ font-family: 'Raleway', sans-serif;
 }
 
 /*****excellent section*****/
-.excellent {}
-
 .excellent__inner {
   padding-top: 80px;
   display: flex;
@@ -801,10 +800,6 @@ font-family: 'Raleway', sans-serif;
     margin: 10px 0px 80px 0px;
   }
 }
-
-.excellent__body {}
-
-.excellent__title {}
 
 .excellent__text {
   margin: 40px 0px 0px 0px;
@@ -1174,8 +1169,6 @@ font-family: 'Raleway', sans-serif;
   color: #363636;
   line-height: 1.667;
 }
-
-.footer-post__text {}
 
 .footer__text_blue {
   color: #00bff3;
