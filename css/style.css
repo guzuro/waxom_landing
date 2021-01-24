@@ -1104,11 +1104,11 @@ font-family: 'Raleway', sans-serif;
   padding: 5px;
 }
 
-@media screen and (max-width:990px){
-  
-.footer__column {
-  flex: 1 1 50%;
-}
+@media screen and (max-width:990px) {
+
+  .footer__column {
+    flex: 1 1 50%;
+  }
 }
 
 .footer__about,
@@ -1230,7 +1230,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 
-.header.scroll{
+.header.scroll {
   z-index: 55;
   background-color: #555555;
 }
