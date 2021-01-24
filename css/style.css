@@ -116,6 +116,12 @@ i:hover {
   margin: 0 auto;
 }
 
+@media (max-width: 1410px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
 @media (max-width: 1250px) {
   .container {
     max-width: 980px;
@@ -166,7 +172,7 @@ font-family: 'Raleway', sans-serif;
 
 /*header*/
 .header {
-  background-color: rgba(0, 0, 0, 0.35);
+  /* background-color: rgba(0, 0, 0, 0.35); */
   top: 0;
   left: 0;
   width: 100%;
@@ -353,6 +359,12 @@ font-family: 'Raleway', sans-serif;
   .home__slider .slick-next:before {
     display: none;
   }
+
+  .home__inner {
+    padding: 200px 0px 0px 0px;
+  }
+
+
 }
 
 /*****services*******/
@@ -487,6 +499,7 @@ font-family: 'Raleway', sans-serif;
 
   .ideas__inner {
     height: 450px;
+    padding: 10px 0px 0px 0px;
   }
 }
 
@@ -530,6 +543,11 @@ font-family: 'Raleway', sans-serif;
 @media (max-width: 767.98px) {
   .bar__inner {
     flex-direction: column;
+  }
+
+  .bar__button {
+    width: fit-content;
+    margin: 10px auto 0 auto;
   }
 }
 
@@ -825,6 +843,7 @@ font-family: 'Raleway', sans-serif;
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin: 10px 0px 0px 0px;
 }
 
 .data__item::after {
@@ -854,10 +873,29 @@ font-family: 'Raleway', sans-serif;
   color: #fff;
 }
 
+@media (max-width: 767px) {
+  .data__item {
+    flex: 1 1 50%
+  }
+
+  .data__item::after {
+    margin: 10px auto 0px auto;
+  }
+
+  .data__icon {
+    font-size: 35px;
+  }
+
+  .data__counter {
+    font-size: 30px;
+  }
+
+  .data__about {
+    font-size: 12px;
+  }
+}
 
 /******posts section****/
-.posts {}
-
 .posts__inner {
   padding: 100px 0px;
 }
@@ -960,6 +998,12 @@ font-family: 'Raleway', sans-serif;
   margin: 20px 0px 0px 0px;
 }
 
+@media (max-width: 767px) {
+  .post-item__text {
+    font-size: 19px;
+  }
+}
+
 .post-item__more {
   margin: 30px 0px 0px 0px;
 }
@@ -1003,6 +1047,16 @@ font-family: 'Raleway', sans-serif;
 
 .posts__list .slick-next {
   left: 51.5%;
+}
+
+@media (max-width: 767px) {
+  .posts__list .slick-prev {
+    left: 40.5%;
+  }
+
+  .posts__list .slick-next {
+    left: 60.5%;
+  }
 }
 
 .posts__list .slick-next:before {
@@ -1050,8 +1104,16 @@ font-family: 'Raleway', sans-serif;
 }
 
 .footer__column {
-  max-width: 265px;
-  flex: 1 1 25%
+  max-width: 275px;
+  flex: 1 1 25%;
+  padding: 5px;
+}
+
+@media screen and (max-width:990px){
+  
+.footer__column {
+  flex: 1 1 50%;
+}
 }
 
 .footer__about,
@@ -1172,4 +1234,10 @@ font-family: 'Raleway', sans-serif;
 
 .copyright__link {
   color: #959595;
+}
+
+
+.header.scroll{
+  z-index: 55;
+  background-color: #555555;
 }

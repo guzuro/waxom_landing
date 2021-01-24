@@ -24,10 +24,19 @@ $(document).ready(function () {
                slidesToScroll: 1
             }
          }
-         // You can unslick at a given breakpoint now by adding:
-         // settings: "unslick"
-         // instead of a settings object
       ]
-
    });
+
+   window.onscroll = () => {
+      headerBackground();
+   }
 });
+
+function headerBackground() {
+   if (window.pageYOffset > "150") {
+      $('.header').addClass("scroll");
+   } else {
+      $('.header').removeClass("scroll");
+   }
+
+}
